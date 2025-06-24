@@ -1,16 +1,58 @@
-Provider,PTR,Provider Domain,PTR PCRE Regex
-Amazon Web Services (AWS),ec2-54-153-82-85.us-west-1.compute.amazonaws.com,amazonaws.com,"^ec2-\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.[a-z0-9-]+\.compute\.amazonaws\.com$"
-Amazon Web Services (AWS),ec2-34-231-255-33.compute-1.amazonaws.com,amazonaws.com,"^ec2-\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.compute-1\.amazonaws\.com$"
-Google Cloud Platform (GCP),203-0-113-25.bc.googleusercontent.com,googleusercontent.com,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.bc\.googleusercontent\.com$"
-Microsoft Azure,myvm.westus.cloudapp.azure.com,azure.com,"^[\w-]+\.[\w-]+\.cloudapp\.azure\.com$"
-Linode,203-0-113-25.ip.linodeusercontent.com,linodeusercontent.com,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.ip\.linodeusercontent\.com$"
-Linode,li1726-108.members.linode.com,linode.com,"^li\d+-\d+\.members\.linode\.com$"
-Vultr,149.248.21.89.vultrusercontent.com,vultrusercontent.com,"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\.vultrusercontent\.com$"
-Scaleway,dfa75d97-42d1-491a-96b2-1d82b95c5d15.pub.instances.scw.cloud,scw.cloud,"^[a-f0-9-]+\.pub\.instances\.scw\.cloud$"
-Hetzner,203-0-113-25-static.hetzner.de,hetzner.de,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}-static\.hetzner\.de$"
-Hetzner,server203-0-113-25.customers.your-server.de,hetzner.de,"^server\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.customers\.your-server\.de$"
-OVHcloud,203.0.113.25.ovh.net,ovh.net,"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\.ovh\.net$"
-OVHcloud,vps-4949b48f.vps.ovh.net,ovh.net,"^vps-[a-z0-9]+\.vps\.ovh\.net$"
-Contabo,vmi753340.contaboserver.net,contaboserver.net,"^vmi\d+\.contaboserver\.net$"
-Stark Industries,vm1746027.stark-industries.solutions,stark-industries.solutions,"^vm\d+\.stark-industries\.solutions$"
-ColoCrossing,172-245-205-13-host.colocrossing.com,colocrossing.com,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}-host\.colocrossing\.com$"
+Provider,PTR,Provider Domain,PTR PCRE Regex,Verification URL
+Amazon Web Services (AWS),ec2-54-153-82-85.us-west-1.compute.amazonaws.com,amazonaws.com,"^ec2-\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.[a-z0-9-]+\.compute\.amazonaws\.com$",https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-reverse-dns.html
+Amazon Web Services (AWS),ec2-34-231-255-33.compute-1.amazonaws.com,amazonaws.com,"^ec2-\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.compute-1\.amazonaws\.com$",https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-reverse-dns.html
+Google Cloud Platform (GCP),203-0-113-25.bc.googleusercontent.com,googleusercontent.com,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.bc\.googleusercontent\.com$",https://cloud.google.com/compute/docs/ip-addresses/reverse-dns
+Microsoft Azure,myvm.westus.cloudapp.azure.com,azure.com,^[\w-]+\.[\w-]+\.cloudapp\.azure\.com$,https://learn.microsoft.com/azure/dns/dns-reverse-dns
+Linode,203-0-113-25.ip.linodeusercontent.com,linodeusercontent.com,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.ip\.linodeusercontent\.com$",https://www.linode.com/docs/platform/manager/guides/configure-reverse-dns/
+Linode,li1726-108.members.linode.com,linode.com,^li\d+-\d+\.members\.linode\.com$,https://www.linode.com/docs/platform/manager/guides/configure-reverse-dns/
+Vultr,149.248.21.89.vultrusercontent.com,vultrusercontent.com,"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\.vultrusercontent\.com$",https://www.vultr.com/docs/manage-reverse-dns-records/
+Scaleway,dfa75d97-42d1-491a-96b2-1d82b95c5d15.pub.instances.scw.cloud,scw.cloud,^[a-f0-9-]+\.pub\.instances\.scw\.cloud$,https://www.scaleway.com/en/docs/setup-reverse-dns/
+Hetzner,203-0-113-25-static.hetzner.de,hetzner.de,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}-static\.hetzner\.de$",https://docs.hetzner.com/cloud/networking/reverse-dns/
+Hetzner,server203-0-113-25.customers.your-server.de,hetzner.de,"^server\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}\.customers\.your-server\.de$",https://docs.hetzner.com/cloud/networking/reverse-dns/
+OVHcloud,203.0.113.25.ovh.net,ovh.net,"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\.ovh\.net$",https://docs.ovh.com/world/network/reverse-dns/
+OVHcloud,vps-4949b48f.vps.ovh.net,ovh.net,^vps-[a-z0-9]+\.vps\.ovh\.net$,https://docs.ovh.com/world/network/reverse-dns/
+Contabo,vmi753340.contaboserver.net,contaboserver.net,^vmi\d+\.contaboserver\.net$,https://contabo.com/en/guides/reverse-dns/
+Stark Industries,vm1746027.stark-industries.solutions,stark-industries.solutions,^vm\d+\.stark-industries\.solutions$,https://stark-industries.solutions/docs/reverse-dns
+ColoCrossing,172-245-205-13-host.colocrossing.com,colocrossing.com,"^\d{1,3}-\d{1,3}-\d{1,3}-\d{1,3}-host\.colocrossing\.com$",https://colocrossing.com/knowledgebase/reverse-dns/
+Amazon Web Services,ec2-54-123-45-67.compute.amazonaws.com,amazonaws.com,"^ec2-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}\.compute\.amazonaws\.com$",https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-reverse-dns.html
+Amazon Web Services,ec2-54-123-45-67.compute-1.amazonaws.com,amazonaws.com,"^ec2-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}-[0-9]{1,3}\.compute-1\.amazonaws\.com$",https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-reverse-dns.html
+Amazon Web Services,d1234567890.cloudfront.net,net,^[a-z0-9]+\.cloudfront\.net$,https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
+Amazon Web Services,appname.elasticbeanstalk.com,com,^[a-zA-Z0-9-]+\.elasticbeanstalk\.com$,https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html
+Amazon Web Services,a0230a75ca4101bc6.awsglobalaccelerator.com,com,^[a-z0-9]+\.awsglobalaccelerator\.com$,https://docs.aws.amazon.com/global-accelerator/latest/dg/overview.html
+OVH,ns123456.ovh.net,net,^[a-z0-9]+\.ovh\.net$,https://docs.ovh.com/world/network/reverse-dns/
+OVH,ns123456.ip-51-79-128.net,net,^[a-z0-9]+\.ip-51-79-128\.net$,https://docs.ovh.com/world/network/reverse-dns/
+OVH,ns3138123.ip-51-83-2.eu,eu,^ns[0-9]+\.ip-51-83-2\.eu$,https://support.us.ovhcloud.com/hc/en-us/articles/360002181530-How-to-Configure-Reverse-DNS
+OVH,ip4.ip-149-56-203.net,net,^ip[0-9]+\.ip-149-56-203\.net$,https://docs.ovh.com/world/network/reverse-dns/
+Cloudflare,server123.cloudflare.net,net,^[a-z0-9]+\.cloudflare\.net$,https://developers.cloudflare.com/cdn/
+Cloudflare,vtwo.me.cdn.cloudflare.net,cloudflare.net,^[a-z0-9.-]+\.cdn\.cloudflare\.net$,https://developers.cloudflare.com/cdn/
+Cloudflare,server123.cloudflare.net,net,^[a-z0-9]+\.cloudflare\.net$,https://developers.cloudflare.com/cdn/
+Cloudflare,appname.workers.dev,dev,^[a-zA-Z0-9-]+\.workers\.dev$,https://developers.cloudflare.com/workers/
+Linode,li123-45.members.linodeusercontent.com,com,^li[0-9]+-[0-9]+\.members\.linodeusercontent\.com$,https://www.linode.com/docs/platform/manager/guides/configure-reverse-dns/
+Linode,172-105-49-139.ip.linodeusercontent.com,linodeusercontent.com,^[0-9]+-[0-9]+-[0-9]+-[0-9]+\.ip\.linodeusercontent\.com$,https://www.linode.com/docs/platform/manager/guides/configure-reverse-dns/
+Tencent Cloud,server123.tencentcs.com,com,^[a-z0-9]+\.tencentcs\.com$,https://www.tencentcloud.com/document/product/213/
+Tencent Cloud,api123.apigw.tencentcs.com,tencentcs.com,^[a-z0-9]+\.apigw\.tencentcs\.com$,https://www.tencentcloud.com/document/product/213/
+Tencent Cloud,api123.tencentapigw.com.cn,com.cn,^[a-z0-9]+\.tencentapigw\.com\.cn$,https://www.tencentcloud.com/document/product/213/
+Huawei Cloud,api123.huaweicloudapis.com,com,^[a-z0-9]+\.huaweicloudapis\.com$,https://support.huaweicloud.com/intl/en-us/dns_faq/dns_faq_012.html
+Huawei Cloud,ns1.hwclouds-dns.com,com,^[a-z0-9]+\.hwclouds-dns\.com$,https://support.huaweicloud.com/intl/en-us/dns_faq/dns_faq_012.html
+Huawei Cloud,ecs-115-120-250-85.compute.hwclouds-dns.com,hwclouds-dns.com,^ecs-[0-9]+-[0-9]+-[0-9]+-[0-9]+\.compute\.hwclouds-dns\.com$,https://support.huaweicloud.com/intl/en-us/dns_faq/dns_faq_012.html
+Contabo,vmi837119.contaboserver.net,net,^vmi[0-9]+\.contaboserver\.net$,https://contabo.com/en/guides/reverse-dns/
+Hetzner,static123.your-server.de,de,^[a-z0-9]+\.your-server\.de$,https://docs.hetzner.com/cloud/networking/reverse-dns/
+Google Cloud,4.196.215.35.bc.googleusercontent.com,com,^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\.bc\.googleusercontent\.com$,https://cloud.google.com/compute/docs/ip-addresses/reverse-dns
+Hivelocity,107-155-122-172.static.hvvc.us,hvvc.us,^[0-9]+-[0-9]+-[0-9]+-[0-9]+\.static\.hvvc\.us$,https://www.hivelocity.net/kb/
+Beget,server123.beget.app,app,^[a-z0-9]+\.beget\.app$,https://beget.com/en/support/
+cPanel,157-230-209-101.cprapid.com,com,^[0-9]+-[0-9]+-[0-9]+-[0-9]+\.cprapid\.com$,https://support.cpanel.net/hc/en-us/articles/360052632174-What-is-the-cprapid-com-DNS-zone-I-see-on-my-server
+Plesk,adoring-tereshkova.185-184-58-213.plesk.page,page,^[a-z0-9-]+\.[0-9]+-[0-9]+-[0-9]+-[0-9]+\.plesk\.page$,https://support.plesk.com/hc/en-us/
+sslip.io,45.77.154.69.sslip.io,io,^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\.sslip\.io$,https://github.com/sslip/sslip.io
+AWCloud,ahv-id-27853.vps.awcloud.nl,awcloud.nl,^ahv-id-[0-9]+\.vps\.awcloud\.nl$,https://awcloud.nl
+Linkso,gp-05.linkso.fr,fr,^gp-[0-9]+\.linkso\.fr$,https://linkso.fr
+netcup,v2202112118727170766.bestsrv.de,de,^v[0-9]+\.bestsrv\.de$,https://www.netcup.com/
+Timeweb,764017-goodsmile.tmweb.ru,ru,^[0-9]+-[a-z]+\.tmweb\.ru$,https://timeweb.com/
+VDSina,host-77-246-99-16.hosted-by-vdsina.ru,ru,^host-[0-9]+-[0-9]+-[0-9]+-[0-9]+\.hosted-by-vdsina\.ru$,https://vdsina.ru/
+Execulink,64-39-176-145.ded.execulink.com,execulink.com,^[0-9]+-[0-9]+-[0-9]+-[0-9]+\.ded\.execulink\.com$,https://www.execulink.ca/business/networking-solutions/webhosting/
+DigiNet,ip-6-182.digi.net.id,net.id,^ip-[0-9]+-[0-9]+\.digi\.net\.id$,https://www.digi.net.id/
+IONOS,ip74-208-123-194.pbiaas.com,com,^ip[0-9]+-[0-9]+-[0-9]+-[0-9]+\.pbiaas\.com$,https://www.ionos.com/help/domains/configure-reverse-dns/
+Alibaba Cloud,helloworld-aogxlrocvl.cn-hangzhou.fcapp.run,fcapp.run,^[a-z0-9-]+\.cn-hangzhou\.fcapp\.run$,https://www.alibabacloud.com/help
+Baidu Cloud,4jvm9hwq0d2j4.cfc-execute.gz.baidubce.com,gz.baidubce.com,^[a-z0-9]+\.cfc-execute\.gz\.baidubce\.com$,https://cloud.baidu.com/doc
+UpCloud,95-111-198-21.sg-sin1.upcloud.host,upcloud.host,^[0-9]+-[0-9]+-[0-9]+-[0-9]+\.sg-sin1\.upcloud\.host$,https://www.upcloud.com/support/configuring-reverse-dns-records/
+BladeWP,bmwspeednl.development.bladewp.com,com,^[a-z0-9-]+\.development\.bladewp\.com$,https://bladewp.com/docs/
+Azure,gophish-wisr.hjahbwdrbhckcya8.australiaeast.azurecontainer.io,io,^[a-z0-9-]+\.[a-z0-9-]+\.[a-z0-9-]+\.azurecontainer\.io$,https://learn.microsoft.com/azure/container-instances/container-instances-overview
